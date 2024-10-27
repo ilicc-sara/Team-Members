@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.btn-container {
+  height: 60px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -15,6 +19,8 @@ html {
   grid-template-rows: 1fr;
   justify-content: center;
   row-gap: 2rem;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  padding: 2rem;
 }
 
 .member {
@@ -27,7 +33,6 @@ html {
 
 img {
   justify-self: center;
-  /* width: 70px; */
   height: 150px;
   width: 150px;
   border-radius: 10000px;
@@ -41,9 +46,19 @@ img {
   justify-self: center;
   margin-left: 12rem;
   margin-right: 12rem;
+  text-align: center;
 }
 
 .btn-container {
   justify-self: center;
   height: 3rem;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+.btn-cont {
+  justify-self: center;
 }
