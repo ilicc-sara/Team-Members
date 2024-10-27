@@ -53,19 +53,33 @@ const slides = [
 ];
 
 let activeIndex = 0;
+let maxSlide = slides.length;
 pic.src = slides[activeIndex].image;
 name.textContent = slides[activeIndex].title;
 job.textContent = slides[activeIndex].occupation;
 text.textContent = slides[activeIndex].description;
 
 // console.log(slides[3].image);
+console.log(slides.length);
 
 btnLeft.addEventListener("click", function () {
-  activeIndex--;
+  if (activeIndex === 0) {
+    activeIndex = maxSlide - 1;
+  } else {
+    --activeIndex;
+  }
+  pic.src = slides[activeIndex].image;
+  name.textContent = slides[activeIndex].title;
+  job.textContent = slides[activeIndex].occupation;
+  text.textContent = slides[activeIndex].description;
 });
 
 btnRight.addEventListener("click", function () {
-  activeIndex++;
+  if (activeIndex === maxSlide - 1) {
+    activeIndex = 0;
+  } else {
+    ++activeIndex;
+  }
   pic.src = slides[activeIndex].image;
   name.textContent = slides[activeIndex].title;
   job.textContent = slides[activeIndex].occupation;
