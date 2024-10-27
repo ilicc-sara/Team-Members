@@ -42,6 +42,10 @@ img {
   justify-self: center;
 }
 
+.info-cont {
+  height: 5rem;
+}
+
 .info {
   justify-self: center;
   margin-left: 12rem;
