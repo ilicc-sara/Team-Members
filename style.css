@@ -74,8 +74,9 @@ body {
 
 .job {
   justify-self: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #6863cd;
+  text-transform: uppercase;
 }
 
 .info-cont {
