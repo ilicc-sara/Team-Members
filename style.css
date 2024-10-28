@@ -10,10 +10,20 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #191506;
+  background-color: #fffbeb;
+  overflow-x: hidden;
 }
 
 .review {
-  width: 80rem;
+  width: 60rem;
   margin: 20vh auto;
   display: grid;
   grid-template-rows: 1fr;
@@ -21,10 +31,6 @@ html {
   row-gap: 1.5rem;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
   padding: 2rem;
-}
-
-.member {
-  justify-self: center;
 }
 
 .img-container {
@@ -38,8 +44,14 @@ img {
   border-radius: 10000px;
 }
 
+.member {
+  justify-self: center;
+  font-size: 2.5rem;
+}
+
 .job {
   justify-self: center;
+  font-size: 1.8rem;
 }
 
 .info-cont {
@@ -48,12 +60,14 @@ img {
 
 .info {
   justify-self: center;
-  margin-left: 12rem;
-  margin-right: 12rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .btn-container {
+  margin-top: 2rem;
   justify-self: center;
   height: 3rem;
 }
