@@ -12,7 +12,7 @@ const text = document.querySelector(".info");
 const slides = [
   {
     image: (pic.src = `/pic0.jpeg`),
-    title: (name.textContent = "Ana Smith"),
+    title: (name.textContent = "Anna Smith"),
     occupation: (job.textContent = `Designer`),
     description:
       (text.textContent = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio hic

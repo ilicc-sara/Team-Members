@@ -18,7 +18,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #191506;
-  background-color: #fffbeb;
+  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -31,27 +31,51 @@ body {
   row-gap: 1.5rem;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
   padding: 2rem;
+  /* background: linear-gradient(to bottom, white, lightblue); */
 }
 
 .img-container {
   justify-self: center;
+  position: relative;
 }
 
-img {
+.profile-pic {
   justify-self: center;
   height: 150px;
   width: 150px;
   border-radius: 10000px;
 }
 
+.img-container::before {
+  content: "";
+  display: block;
+  width: 105%;
+  padding-bottom: 105%;
+  background-color: #6863cd;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+
+  /*
+  padding-bottom: 110%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  */
+}
+
 .member {
   justify-self: center;
   font-size: 2.5rem;
+  color: #103d87;
 }
 
 .job {
   justify-self: center;
   font-size: 1.8rem;
+  color: #6863cd;
 }
 
 .info-cont {
@@ -64,10 +88,12 @@ img {
   margin-right: 1rem;
   text-align: center;
   font-size: 1.6rem;
+  color: #4c4e51;
+  line-height: 20px;
 }
 
 .btn-container {
-  margin-top: 2rem;
+  margin-top: 3rem;
   justify-self: center;
   height: 3rem;
 }
@@ -75,6 +101,7 @@ img {
 .icon {
   height: 30px;
   width: 30px;
+  color: #103d87;
 }
 
 .btn-cont {
